@@ -21,7 +21,7 @@ dtrain$predLogPINCP <- predict(model, newdata = dtrain)
 #   Split 50-50 into training and test sets 
 
 # Note 3: 
-#   Fit a linear model to log(income). We will expand this command in the section below. 
+#   Fit a linear model to log(income). 
 
 # Note 4: 
 #   Get the predicted log(income) on the test and training sets. 
