@@ -2,7 +2,7 @@
 # (example 3.2 of section 3.1.1)  : Exploring data : Using summary statistics to spot problems : Typical problems revealed by data summaries 
 # Title: Will the variable is.employed be useful for modeling? 
 
-## is_employed         	# Note: 1                 
+## is_employed                                         	# Note: 1 
 ## FALSE: 2321   
 ## TRUE :44887  
 ## NA's :24333  
@@ -32,8 +32,8 @@
 #   parents)? 
 
 # Note 2: 
-#   The variables housing_type, recent_move, 
-#   num_vehicles and gas_usage are missing relatively few values—about 2% of the data. It’s probably safe to just 
-#   drop the rows that are missing values, especially if the missing values are  
+#   The variables housing_type, recent_move, num_vehicles, and gas_usage are missing relatively 
+#   few values—about 2% of the data. It’s probably safe to just drop the 
+#   rows that are missing values, especially if the missing values are 
 #   all in the same 1720 rows. 
 

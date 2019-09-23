@@ -3,7 +3,7 @@
 # Title: Normalizing income by state 
 
 library(dplyr)
-median_income_table <- readRDS("median_income.RDS") 	# Note: 1 
+median_income_table <- readRDS("median_income.RDS")                      	# Note: 1 
 head(median_income_table)  
 
 ##   state_of_res median_income
@@ -15,7 +15,7 @@ head(median_income_table)
 ## 6     Colorado         32000
 
 training_prepared <-  training_prepared %>%
-  left_join(., median_income_table, by="state_of_res") %>%  	# Note: 2 
+  left_join(., median_income_table, by="state_of_res") %>%             	# Note: 2 
   mutate(income_normalized = income/median_income) 
 
 head(training_prepared[, c("income", "median_income", "income_normalized")]) 	# Note: 3 
@@ -38,8 +38,9 @@ summary(training_prepared$income_normalized)
 #   directory PDSwR2/Custdata. Here we assume that this is your working directory. 
 
 # Note 2: 
-#   Join median_income_table into the customer data, so you can normalize each person's income 
-#   by the median income of their state. 
+#   Join median_income_table into the customer data, so 
+#   you can normalize each person’s income by the median 
+#   income of their state. 
 
 # Note 3: 
 #   Compare the values of income and income_normalized. 
